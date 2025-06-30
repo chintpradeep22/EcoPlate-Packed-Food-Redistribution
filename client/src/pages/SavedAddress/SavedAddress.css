@@ -1,0 +1,90 @@
+.saved-address-container {
+    padding: 20px;
+  }
+  
+  .saved-address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .saved-address-header h3 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  .add-btn {
+    background-color: #1b9c85;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .address-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .address-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .address-label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .primary-badge {
+    background: #1b9c85;
+    color: white;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    margin-left: 8px;
+  }
+  
+  .address-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .make-primary {
+    font-size: 0.75rem;
+    border: none;
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .empty-text {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+  }
+  

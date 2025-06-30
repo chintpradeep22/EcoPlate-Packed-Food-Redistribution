@@ -1,0 +1,32 @@
+.users-container {
+    padding: 2rem;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.users-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.admin-list-users {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}

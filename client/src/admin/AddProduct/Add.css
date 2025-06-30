@@ -1,0 +1,103 @@
+.add-container {
+    max-width: 750px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fdfdfd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #0b8f79;
+    box-shadow: 0 0 0 2px rgba(11, 143, 121, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+.image-upload {
+    align-items: flex-start;
+}
+
+.image-upload p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.image-preview img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px dashed #ccc;
+    transition: all 0.3s ease;
+}
+
+.image-preview:hover img {
+    border-color: #0b8f79;
+    transform: scale(1.02);
+}
+
+.btn-submit {
+    margin-top: 1rem;
+    padding: 14px 20px;
+    background: #0b8f79;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #087462;
+}

@@ -1,0 +1,262 @@
+/* --- Base Styles --- */
+.navbar {
+    margin: 0 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.navbar-menu a.active {
+    font-weight: 600;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar-menu a:hover {
+    color: tomato;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* --- Buttons --- */
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 8px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+/* --- Search --- */
+.navbar-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.navbar-search input {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 180px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 100;
+    background: white;
+}
+
+/* --- Cart --- */
+.cart-icon-wrapper {
+    position: relative;
+}
+
+.cart-icon-wrapper img {
+    width: 26px;
+    height: 26px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* --- Profile --- */
+.navbar-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* --- Hamburger --- */
+.navbar-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-hamburger img {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --- Mobile Menu Panel --- */
+.navbar-mobile-menu {
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.navbar-mobile-menu a {
+    font-size: 16px;
+    color: #49557e;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.navbar-mobile-menu a.active {
+    border-left: 3px solid tomato;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.navbar-mobile-menu button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mobile-profile img {
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1050px) {
+    .logo {
+        width: 130px;
+    }
+
+    .navbar-menu {
+        gap: 18px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right button {
+        padding: 8px 20px;
+    }
+
+    .search-icon,
+    .cart-icon-wrapper img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .cart-count {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: block;
+    }
+
+    .navbar-search input {
+        width: 160px;
+    }
+
+    .navbar-right {
+        gap: 15px;
+    }
+
+    .navbar button {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 110px;
+    }
+
+    .navbar-search input {
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+
+    .search-icon,
+    .cart-icon-wrapper img,
+    .navbar-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cart-count {
+        font-size: 10px;
+        padding: 1px 4px;
+    }
+}

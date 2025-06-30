@@ -1,0 +1,50 @@
+.how-it-works {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .how-it-works h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .how-it-works-steps {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+  }
+  
+  .how-it-works-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .how-it-works-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .how-it-works-card .icon {
+    font-size: 2.5rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+  }
+  
+  .how-it-works-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .how-it-works-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  

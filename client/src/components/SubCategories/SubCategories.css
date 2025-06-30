@@ -1,0 +1,35 @@
+.subcategory-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.subcategory-item {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.subcategory-item:hover {
+    background-color: #e0e0e0;
+}
+
+.subcategory-item.active {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}
+
+.subcategory-item label {
+    cursor: pointer;
+}
+
+.subcategory-item input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}

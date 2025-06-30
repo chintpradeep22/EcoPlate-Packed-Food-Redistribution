@@ -1,0 +1,144 @@
+GET http://localhost:3000/products?page=2&limit=10&search_q=onion
+
+###
+
+GET http://localhost:3000/products/category-map
+
+###
+
+GET http://localhost:3000/cart/
+
+###
+
+POST http://localhost:3000/reset-password
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "email": "adamr667icd@gmail.com",
+  "password": "rica7rd_567",
+  "name": "Adam Richard"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "email": "adamr667icd@gmail.com",
+  "password": "rica7rd_567",
+  "name": "Adam Richard"
+}
+
+###
+
+GET http://localhost:3000/cart/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+POST http://localhost:3000/cart/add/2e97eb26-2dfc-4f28-b481-84be808c6199
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+POST http://localhost:3000/cart/remove/e84b5fc2-0e50-4b38-b2be-edf06f5f9fbe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+DELETE http://localhost:3000/cart/delete/2e97eb26-2dfc-4f28-b481-84be808c6199
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+GET http://localhost:3000/orders/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+POST http://localhost:3000/orders/place/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "productName": "Onion (Loose)",
+      "brand": "Fresho",
+      "price": 69.75,
+      "discountPrice": 52,
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/40075537_5-fresho-onion.jpg",
+      "quantity": "2 kg",
+      "category": "Fruits & Vegetables",
+      "subCategory": "Potato, Onion & Tomato",
+      "absoluteUrl": "https://www.bigbasket.com/pd/40075537/fresho-onion-2-kg/",
+      "updatedAt": "2025-06-26T07:38:13.462Z",
+      "productId": "2e97eb26-2dfc-4f28-b481-84be808c6199",
+      "productQuantity": 1
+    },
+    {
+      "productName": "Onion",
+      "brand": "Fresho",
+      "price": 174.35,
+      "discountPrice": 130,
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/1201414_1-fresho-onion.jpg",
+      "quantity": "5 kg",
+      "category": "Fruits & Vegetables",
+      "subCategory": "Potato, Onion & Tomato",
+      "absoluteUrl": "https://www.bigbasket.com/pd/1201414/fresho-onion-5-kg/",
+      "updatedAt": "2025-06-26T07:38:13.555Z",
+      "productId": "f2d15171-04bf-4aad-b1d0-903318d2356e",
+      "productQuantity": 1
+    }
+  ],
+  "amount": 50555,
+  "address": {
+    "line1": "123 Main Street",
+    "city": "Hyderabad",
+    "zip": "500001"
+  }
+}
+
+###
+
+DELETE http://localhost:3000/orders/cancel/685d14fbb970e910eb759aed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+GET http://localhost:3000/admin/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+
+###
+
+POST http://localhost:3000/admin/products/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA
+Content-Type: application/json
+
+{
+  "productName": "Onion (Loose)",
+  "brand": "Fresho",
+  "price": 19,
+  "discountPrice": 15,
+  "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/40075537_5-fresho-onion.jpg",
+  "quantity": "500 g",
+  "category": "Fruits & Vegetables",
+  "subCategory": "Potato, Onion & Tomato",
+  "absoluteUrl": "https://www.bigbasket.com/pd/40075537/fresho-onion-2-kg/",
+  "updatedAt": {
+    "$date": "2025-06-26T07:38:13.462Z"
+  },
+  "productId": "2e97eb26-2dfc-4f28-b481-84be808c6199",
+  "productQuantity": 1
+}
+
+###
+
+DELETE http://localhost:3000/admin/product/delete/5d63aa88-8da1-4d99-8b94-5b61b39fb89d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNDgxZjFmNy1lY2JmLTQyMzAtOGMwNC05YmJhMjgxMGNjZTYiLCJpYXQiOjE3NTA5MjQ1ODl9.2FE3-IanEcA55xbmpYgQ8yke6yLVwdUbxTXaAVuOWDA

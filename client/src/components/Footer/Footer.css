@@ -1,0 +1,95 @@
+.footer {
+  background-color: #111;
+  color: #f1f1f1;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social p {
+  width: 28px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social p:hover {
+  transform: scale(1.1);
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ccc;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-middle ul li p {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-middle ul li:hover,
+.footer-right ul li:hover {
+  color: #00cc88;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
