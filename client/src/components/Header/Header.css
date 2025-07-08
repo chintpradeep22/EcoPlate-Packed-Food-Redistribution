@@ -1,5 +1,5 @@
 .header {
-    width: 98%;
+    width: 100%;
     height: 34vw;
     margin: 20px;
     background: url('https://res.cloudinary.com/de3tdd3db/image/upload/v1751284979/header_img_zmm9xy.png') no-repeat center center;
@@ -72,7 +72,7 @@
     }
 
     .header-contents {
-        max-width: 90%;
+        max-width: 100%;
         left: 5%;
         bottom: 5%;
         padding: 0.8rem;
