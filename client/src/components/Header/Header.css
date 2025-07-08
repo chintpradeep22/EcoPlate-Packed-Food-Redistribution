@@ -57,7 +57,7 @@
 /* Tablets */
 @media (max-width: 1050px) {
     .header {
-        height: 45vw;
+        height: 100vw;
     }
 
     .header-contents {
@@ -68,7 +68,7 @@
 /* Mobile Devices */
 @media (max-width: 750px) {
     .header {
-        height: 60vw;
+        height: 100vw;
     }
 
     .header-contents {
