@@ -1,14 +1,16 @@
 .header {
     width: 100%;
     height: 34vw;
-    margin: 20px;
+    margin: 20px auto;
     background: url('https://res.cloudinary.com/de3tdd3db/image/upload/v1751284979/header_img_zmm9xy.png') no-repeat center center;
     background-size: cover;
     position: relative;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-start;
     overflow: hidden;
+    transition: height 0.3s ease;
 }
 
 .header-contents {
@@ -20,75 +22,86 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    animation: fadeIn 3s;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
+    animation: fadeIn 2s ease-in;
+    background: rgba(255, 255, 255, 0.85); /* slight background for text readability */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .header-contents h2 {
-    font-weight: 600;
-    color: #333;
-    font-size: clamp(22px, 4.5vw, 48px);
-    line-height: 1.2;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: clamp(22px, 5vw, 48px);
+    margin: 0;
 }
 
 .header-contents p {
     color: #333;
-    font-size: clamp(14px, 1.2vw, 18px);
-    line-height: 1.5;
+    font-size: clamp(14px, 1.3vw, 18px);
+    line-height: 1.6;
+    margin: 0;
 }
 
 .header-contents button {
     border: none;
+    background-color: #ffffff;
     color: #333;
     font-weight: 600;
     padding: 0.8em 1.8em;
-    background-color: white;
-    font-size: clamp(13px, 1vw, 16px);
+    font-size: clamp(14px, 1vw, 16px);
     border-radius: 50px;
     cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .header-contents button:hover {
     background-color: #fff4f2;
+    transform: scale(1.05);
 }
 
-/* Tablets */
+/* Tablet Devices */
 @media (max-width: 1050px) {
     .header {
-        height: 100vw;
+        height: 60vw;
     }
 
     .header-contents {
-        max-width: 60%;
+        max-width: 70%;
+        bottom: 8%;
+        left: 5vw;
+        padding: 1.2rem;
     }
 }
 
 /* Mobile Devices */
 @media (max-width: 750px) {
     .header {
-        height: 100vw;
+        height: 90vw;
+        border-radius: 14px;
     }
 
     .header-contents {
-        max-width: 100%;
-        left: 5%;
+        max-width: 90%;
         bottom: 5%;
-        padding: 0.8rem;
-    }
-
-    .header-contents p {
-        display: none;
-        /* Optional: hide for smaller screens */
+        left: 5%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .header-contents h2 {
-        font-size: clamp(18px, 6vw, 32px);
+        font-size: clamp(18px, 6vw, 28px);
+    }
+
+    .header-contents p {
+        font-size: 14px;
+        display: none; /* optional: hides paragraph for clarity */
     }
 
     .header-contents button {
-        padding: 0.7em 1.5em;
+        padding: 0.6em 1.4em;
         font-size: 14px;
     }
 }
