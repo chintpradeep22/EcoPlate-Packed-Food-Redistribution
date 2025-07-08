@@ -62,11 +62,12 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
 
     .explore-menu-list-item {
-        width: 22%;
+        margin: 5px;
+        width: 20%;
         /* approx. 4-5 items per row */
         min-width: unset;
     }
